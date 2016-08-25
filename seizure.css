@@ -1,0 +1,30 @@
+body {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 100px;
+  text-align: center;
+  animation: fontflash .6s infinite;
+  background-image: url('http://i.giphy.com/5xtDarziy6FezwXWCbu.gif');
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+
+@keyframes animate-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+  #scroller-2 {
+    background: linear-gradient(270deg, #18f0b8, #18a2f0, #db5640);
+    background-size: 100% 100%;
+    animation: animateGradient 12s infinite;
+  }
+
+
+  @keyframes animateGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
