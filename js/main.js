@@ -18,12 +18,6 @@ $(function () {
       $proj1Desc.css('display', 'none');
       $pic1.css('opacity', '.6')
     })
-
-    // $proj1Hitbox.on('mouseleave', function(){
-    //   console.log('off')
-    //   $proj1Desc.css('display', 'none');
-    //   $pic1.css('opacity', '.6')
-    // })
   }
 
   function createProj2Events(){
@@ -79,16 +73,16 @@ $(function () {
     })
   }
 
-  function toggleTech(){
+  function toggleSkills(){
     if ($('#about-container').css('display') !== 'none'){
       $('#about-container').slideToggle('fast');
-      $('#tech-container').slideToggle('fast')
+      $('#skills-container').slideToggle('fast')
     } else if ($('#resume-container').css('display') !== 'none'){
       $('#resume-container').slideToggle('fast')
-      $('#tech-container').slideToggle('fast')
+      $('#skills-container').slideToggle('fast')
     } else {
       $('#about-container').slideToggle('fast');
-      $('#tech-container').slideToggle('fast')
+      $('#skills-container').slideToggle('fast')
     }
     // $('#info-wrapper').children().slideToggle('fast')
   }
@@ -97,8 +91,8 @@ $(function () {
     if ($('#about-container').css('display') !== 'none'){
       $('#about-container').slideToggle('fast');
       $('#resume-container').slideToggle('fast')
-    } else if ($('#tech-container').css('display') !== 'none'){
-      $('#tech-container').slideToggle('fast')
+    } else if ($('#skills-container').css('display') !== 'none'){
+      $('#skills-container').slideToggle('fast')
       $('#resume-container').slideToggle('fast')
     } else {
       $('#about-container').slideToggle('fast');
@@ -106,19 +100,27 @@ $(function () {
     }
   }
 
-  function techButton(){
-    $('#tech-button').on('click', toggleTech)
+
+  function skillsButton(){
+    $('#skills-button').on('click', toggleSkills)
   }
 
   function resumeButton(){
     $('#resume-button').on('click', toggleResume)
   }
 
+
+
+
+
+
+
+
   createProj1Events();
   createProj2Events();
   createProj3Events();
   createProj4Events();
-  techButton();
+  skillsButton();
   resumeButton();
 
 
@@ -162,7 +164,11 @@ $(function () {
 
 
 var controller2 = new ScrollMagic.Controller({
-  globalSceneOptions: {duration: 1.2*($(window).height())}
+  globalSceneOptions: {
+    duration: 1.2*($(window).height()),
+    triggerHook: .025,
+    reverse: true
+  }
 });
 
 // build scenes
@@ -186,11 +192,7 @@ var controller2 = new ScrollMagic.Controller({
         .addTo(controller2);
 
 
-  $('#high1').on('click', (e) =>{
-    $('html, body').animate({
-          scrollTop: $(".projects").offset().top -100
-      }, 500);
-  })
+
 
   cycleScroller(scroller);
 });
