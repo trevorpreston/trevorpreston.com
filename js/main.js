@@ -3,62 +3,86 @@ console.log('javascript connected!')
 $(function () {
   //event listeners
   function createProj1Events(){
-    var $pic1 = $('#project1');
-    var $proj1=$('#proj1-desc');
-    var $proj1cont = $('#project-highlight-container')
-    var $proj1hitbox = $('#proj1hitbox')
+    var $pic1 = $('#proj1-pic');
+    var $proj1Desc=$('#proj1-desc');
+    var $proj1Hitbox = $('#proj1-hitbox')
 
-    $pic1.on('mouseover', function(){
-      $pic1.css('opacity', '.9');
-      $proj1.css({'display':'inline-block', 'height':$pic1.height()*.9});
-      $proj1hitbox.css('display', 'block');
-      console.log('HUVAh')
+    $pic1.on('mouseenter', function(){
+      console.log('huva!');
+      $proj1Desc.css({'display':'block', 'height':$pic1.height()});
+      $pic1.css('opacity', '1')
     })
 
-
-    $proj1hitbox.on('mouseout', function(){
+    $pic1.on('mouseleave', function(){
+      console.log('off')
+      $proj1Desc.css('display', 'none');
       $pic1.css('opacity', '.6')
-      $proj1.css('display', 'none');
-      $proj1hitbox.css('display', 'none')
-      console.log('no huvah')
     })
+
+    // $proj1Hitbox.on('mouseleave', function(){
+    //   console.log('off')
+    //   $proj1Desc.css('display', 'none');
+    //   $pic1.css('opacity', '.6')
+    // })
   }
 
   function createProj2Events(){
-    var $pic2 = $('#project2');
-    var $proj = $('#proj-desc');
-    var $projHitbox = $('#proj-hitbox');
-    var $proj2cont = $('#project-highlight-container');
-    var $proj2hitbox1 = $('#proj2hitbox1');
-
-    $pic2.on('mouseover', function(){
-      $pic2.css('opacity', '.9');
-      $proj.css('display', 'inline-block');
-      $projHitbox.css('display', 'block');
-      $proj2hitbox1.css('display', 'block');
-      console.log('HUVAh')
+    var $pic2 = $('#proj2-pic');
+    var $proj2Desc = $('#proj2-desc')
+    var $proj234Container = $('#project234-container')
+    $pic2.on('mouseenter', function(){
+      console.log('huva!');
+      $proj2Desc.css({'display':'block', 'height':$proj234Container.height()});
+      $pic2.css('opacity', '1');
     })
 
-    $proj2hitbox1.on('mouseout', function(){
+    $pic2.on('mouseleave', function(){
+      console.log('off')
+      $proj2Desc.css('display', 'none');
       $pic2.css('opacity', '.6')
-      $proj2hitbox1.css('display', 'none')
-      console.log('no huvah')
     })
-
-    $projHitbox.on('mouseout', function(){
-      $proj.css('display', 'none')
-      console.log('no huvah')
-    })
-
   }
 
+  function createProj3Events(){
+    var $pic3 = $('#proj3-pic');
+    var $proj3Desc = $('#proj3-desc')
+    var $proj234Container = $('#project234-container')
 
+    $pic3.on('mouseenter', function(){
+      console.log('huva!');
+      $proj3Desc.css({'display':'block', 'height':$proj234Container.height()});
+      $pic3.css('opacity', '1');
+    })
 
+    $pic3.on('mouseleave', function(){
+      console.log('off')
+      $proj3Desc.css('display', 'none');
+      $pic3.css('opacity', '.6')
+    })
+  }
 
+  function createProj4Events(){
+    var $pic4 = $('#proj4-pic');
+    var $proj4Desc = $('#proj4-desc')
+    var $proj234Container = $('#project234-container')
 
+    $pic4.on('mouseenter', function(){
+      console.log('huva!');
+      $proj4Desc.css({'display':'block', 'height':$proj234Container.height()});
+      $pic4.css('opacity', '1');
+    })
+
+    $pic4.on('mouseleave', function(){
+      console.log('off')
+      $proj4Desc.css('display', 'none');
+      $pic4.css('opacity', '.6')
+    })
+  }
 
   createProj1Events();
   createProj2Events();
+  createProj3Events();
+  createProj4Events();
 
 
   /* SCROLL MAGIC*/
