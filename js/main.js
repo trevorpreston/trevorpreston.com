@@ -79,10 +79,47 @@ $(function () {
     })
   }
 
+  function toggleTech(){
+    if ($('#about-container').css('display') !== 'none'){
+      $('#about-container').slideToggle('fast');
+      $('#tech-container').slideToggle('fast')
+    } else if ($('#resume-container').css('display') !== 'none'){
+      $('#resume-container').slideToggle('fast')
+      $('#tech-container').slideToggle('fast')
+    } else {
+      $('#about-container').slideToggle('fast');
+      $('#tech-container').slideToggle('fast')
+    }
+    // $('#info-wrapper').children().slideToggle('fast')
+  }
+
+  function toggleResume(){
+    if ($('#about-container').css('display') !== 'none'){
+      $('#about-container').slideToggle('fast');
+      $('#resume-container').slideToggle('fast')
+    } else if ($('#tech-container').css('display') !== 'none'){
+      $('#tech-container').slideToggle('fast')
+      $('#resume-container').slideToggle('fast')
+    } else {
+      $('#about-container').slideToggle('fast');
+      $('#resume-container').slideToggle('fast')
+    }
+  }
+
+  function techButton(){
+    $('#tech-button').on('click', toggleTech)
+  }
+
+  function resumeButton(){
+    $('#resume-button').on('click', toggleResume)
+  }
+
   createProj1Events();
   createProj2Events();
   createProj3Events();
   createProj4Events();
+  techButton();
+  resumeButton();
 
 
   /* SCROLL MAGIC*/
