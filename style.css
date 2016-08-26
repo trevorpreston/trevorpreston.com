@@ -73,11 +73,7 @@ nav{
 
 
 
-.contact{
-  background-color: white;
-  height: 100vh;
-  width: 100%;
-}
+
 
 .nav-el{
   background-color: #828282;
@@ -185,10 +181,7 @@ nav{
   100%{background-position:0% 50%}
 }
 
-.contact-btn{
-  width: 200px;
-  height: 40px
-}
+
 
 
 .projects{
@@ -200,13 +193,12 @@ nav{
   box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);
 }
 
-#projects-head{
+.category-head{
   color: #E0E0E0;
   text-align: center;
   font-size: 75px;
   margin: 20px auto;
 }
-
 
 .projects-container{
   background-color: #424242;
@@ -269,6 +261,39 @@ nav{
 }
 
 
+.contact{
+  background-color: white;
+  height: 110vh;
+  width: 100%;
+  padding-top: 45px;
+  text-align: center;
+}
+
+
+
+#contact-head{
+  color: #525252;
+}
+
+.contact-btn{
+  width: 200px;
+  height: 40px
+}
+
+#contact-container{
+  margin-top: 10%;
+}
+
+.social-icons {
+  opacity: .5;
+  width: 100px;
+  height: auto;
+  padding: 10px;
+}
+
+.social-icons:hover{
+  opacity: .8;
+}
 
 
 /*
