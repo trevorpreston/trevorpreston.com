@@ -15,17 +15,23 @@
   <script src="./js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 </head>
 <body>
-<nav id="nav">
+<nav id="nav" class="anchor-nav">
     <div class="nav-el" id="nav-to-profile">
-      <img src="./images/icons/profile.png" alt="" class="menu-icon">
+      <a href="#section-1" id="anchor1">
+        <img src="./images/icons/profile.png" alt="" class="menu-icon">
+      </a>
     </div>
     <div class="check tog" id="nav-tog-el-1"></div>
     <div class="nav-el">
-      <img src="./images/icons/projects.png" alt="" class="menu-icon">
+      <a href="#section-2" id="anchor2">
+        <img src="./images/icons/projects.png" alt="" class="menu-icon">
+      </a>
     </div>
     <div class="check tog" id="nav-tog-el-2"></div>
     <div class="nav-el">
-      <img src="./images/icons/contact.png" alt="" class="menu-icon">
+      <a href="#section-3" id="anchor3">
+        <img src="./images/icons/contact.png" alt="" class="menu-icon">
+      </a>
     </div>
     <div class="check tog" id="nav-tog-el-4"></div>
 </nav>
@@ -35,7 +41,7 @@
       <p class="scroller" id="scroller-2">a full stack developer</p>
     </h1>
 </section>
-<section class="panel about">
+<section class="panel about" id="section-1">
   <h1>Hi.</h1>
   <div id=info-wrapper>
     <div id="about-container">
@@ -70,7 +76,7 @@
   </div>
 
 </section>
-<section class="panel projects">
+<section class="panel projects" id="section-2">
   <h1 class="category-head">Projects</h1>
   <div class="projects-container">
     <div id="projects-wrapper">
@@ -102,7 +108,7 @@
 
 </section>
 
-<section class="panel contact">
+<section class="panel contact" id="section-3">
   <h1 class="category-head" id="contact-head">I'm Online!</h1>
   <div id="contact-container">
     <p>I am on the web.  Check out my latest projects on github.  Connect with me on LinkedIn.</p>
