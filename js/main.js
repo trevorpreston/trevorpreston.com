@@ -110,6 +110,12 @@ $(function () {
   }
 
 
+  function hideContact(){
+    $('#anchor2').on('click', function(){
+      console.log('hiding contacts')
+      $('#section-3').css({'top':'100vh', 'position':'relative'})
+    })
+  }
 
 
 
@@ -122,6 +128,7 @@ $(function () {
   createProj4Events();
   skillsButton();
   resumeButton();
+  hideContact();
 
 
   /* SCROLL MAGIC*/
@@ -141,7 +148,7 @@ $(function () {
         triggerElement: slides[i]
       })
       .setPin(slides[i])
-      // .addIndicators() // add indicators (requires plugin)
+      .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
   }
 
@@ -166,7 +173,7 @@ $(function () {
 var controller2 = new ScrollMagic.Controller({
   globalSceneOptions: {
     duration: 1.2*($(window).height()),
-    triggerHook: .025,
+    // triggerHook: .025,
     reverse: true
   }
 });
@@ -175,20 +182,20 @@ var controller2 = new ScrollMagic.Controller({
 
   new ScrollMagic.Scene({triggerElement: ".about"})
         .setClassToggle("nav", "active") // add class toggle
-        // .addIndicators() // add indicators (requires plugin)
+        .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
 
   new ScrollMagic.Scene({triggerElement: ".about"})
         .setClassToggle("#nav-tog-el-1", "active-nav") // add class toggle
-        // .addIndicators() // add indicators (requires plugin)
+        .addIndicators() // add indicators (requires plugin)
         .addTo(controller2);
   new ScrollMagic.Scene({triggerElement: ".projects"})
         .setClassToggle("#nav-tog-el-2", "active-nav") // add class toggle
-        // .addIndicators() // add indicators (requires plugin)
+        .addIndicators() // add indicators (requires plugin)
         .addTo(controller2);
   new ScrollMagic.Scene({triggerElement: ".contact"})
         .setClassToggle("#nav-tog-el-4", "active-nav") // add class toggle
-        // .addIndicators() // add indicators (requires plugin)
+        .addIndicators() // add indicators (requires plugin)
         .addTo(controller2);
 
 
