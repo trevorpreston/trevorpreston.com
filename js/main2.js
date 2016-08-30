@@ -10,7 +10,8 @@ $(function () {
     $pic1.on('mouseenter', function(){
       console.log('huva!');
       $proj1Desc.css({'display':'block', 'height':$pic1.height()});
-      $pic1.css('opacity', '1')
+      $pic1.css('opacity', '1');
+      $('#proj1-github').css('display', 'block')
     })
 
     $pic1.on('mouseleave', function(){
@@ -73,6 +74,12 @@ $(function () {
     })
   }
 
+  function toggleOffGitButtons(){
+    $('#projects-wrapper').on('mouseleave', function(){
+      $('.github-button').css('display', 'none')
+    })
+  }
+
   function toggleSkills(){
     if ($('#about-container').css('display') !== 'none'){
       $('#about-container').slideToggle('fast');
@@ -117,6 +124,9 @@ $(function () {
   //   })
   // }
 
+  function navFadein(){
+    $('nav').fadeToggle('slow','linear')
+  }
 
 
 
@@ -128,6 +138,7 @@ $(function () {
   createProj4Events();
   skillsButton();
   resumeButton();
+  toggleOffGitButtons();
   // hideContact();
 
 
@@ -137,6 +148,7 @@ $(function () {
     globalSceneOptions: {
       triggerHook: 'onLeave',
     }
+
   });
 
   // get all slides
@@ -148,7 +160,8 @@ $(function () {
         triggerElement: slides[i]
       })
       .setPin(slides[i])
-      .addIndicators() // add indicators (requires plugin)
+      .setTween("#animate1", 0.5, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
+      // .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
   }
 
@@ -175,7 +188,6 @@ $(function () {
 var controller2 = new ScrollMagic.Controller({
   globalSceneOptions: {
     duration: 1.2*($(window).height()),
-    triggerHook: .025,
     reverse: true
   }
 });
@@ -246,7 +258,10 @@ anchor_nav.addEventListener('click', function(e) {
 // build scenes
 
   new ScrollMagic.Scene({triggerElement: ".about"})
-        .setClassToggle("nav", "active") // add class toggle
+        .on('start', function () {
+          $('nav').fadeToggle(400,'linear')
+          console.log("passed trigger");
+        })
         // .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
 

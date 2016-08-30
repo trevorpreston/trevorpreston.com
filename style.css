@@ -244,6 +244,7 @@ h1 {
 
 
 
+
 #contact-container{
   width: 80%;
   margin: auto 10%;
@@ -313,6 +314,55 @@ h1 {
   box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);
 }
 
+.proj-desc{
+  color:#E0E0E0;
+}
+
+.proj-desc h3{
+  font-size: 44px;
+  margin: 20px 0px 10px;
+  text-align: center
+}
+
+.proj-desc p {
+  padding: 25px;
+}
+
+.github-button{
+  position: absolute;
+  top: 20px;
+  box-shadow: 0 3px 2px rgba(0,0,0,0.16), 0 3px 2px rgba(0,0,0,0.23);
+  background: linear-gradient(270deg, #18f0b8, #18a2f0, #18f0b8);
+  background-size: 600% 600%;
+  -webkit-animation: Gradient 4s ease infinite;
+  -moz-animation: Gradient 4s ease infinite;
+  animation: Gradient 4s ease infinite;
+  color: white;
+  padding-top: 10px;
+  font-size: 20px;
+  height: 34px;
+  width: 200px;
+  text-align: center;
+  background-size: 200% 200%;
+  margin: auto;
+}
+
+
+
+.github-button:hover{
+  background: linear-gradient(270deg, #18a2f0, #18f0b8);
+}
+
+.github-button img{
+  vertical-align: middle;
+  margin-left: 70px;
+}
+
+#proj1-github{
+  left: 140px;
+  display: none;
+}
+
 
 .category-head{
   color: #E0E0E0;
@@ -346,7 +396,7 @@ h1 {
   display: inline-block;
 /*  background-color: yellow;
 */  text-align: center;
-  width: 48%;
+  width: 50%;
   min-width: 400px;
   height: 100%;
   top: 0px;
@@ -362,22 +412,27 @@ h1 {
 
 
 #project234-container{
-  /*position: relative;*/
+  position: relative;
   display: inline-block;
-  vertical-align: top;
-/*  background-color: green;
-*/  text-align: center;
-  width: 48%;
+  width: 47%;
   min-width: 400px;
   height: 100%;
-  top: 0px;
 }
+
+
+.project-wrap{
+  height: 240px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 2%
+}
+
 
 
 .proj-pic{
   object-fit: cover;
   opacity: .6;
-  height: 32%;
+  height: 100%;
   margin: auto;
   margin-bottom: 2%
 }
@@ -566,4 +621,36 @@ h1 {
 .social-icons:hover{
   opacity: .8;
 }
+
+
+
+.github-button2{
+  position: absolute;
+  box-shadow: 0 3px 2px rgba(0,0,0,0.16), 0 3px 2px rgba(0,0,0,0.23);
+  background: linear-gradient(270deg, #18f0b8, #18a2f0, #18f0b8);
+  background-size: 600% 600%;
+  -webkit-animation: Gradient 4s ease infinite;
+  -moz-animation: Gradient 4s ease infinite;
+  animation: Gradient 4s ease infinite;
+  color: white;
+  font-size: 17px;
+  padding: 6px;
+  height: 44px;
+  width: 44px;
+  background-size: 200% 200%;
+  border-radius: 100%;
+  margin-top: 20px;
+  left: 30%;
+  z-index: 10;
+}
+
+.github-button2:hover{
+  background: linear-gradient(270deg, #18a2f0, #18f0b8);
+}
+
+
+.white-github{
+
+}
+
 
