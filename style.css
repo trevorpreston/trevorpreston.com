@@ -661,6 +661,15 @@ h1 {
   margin-left: 70px;
 }
 
+#email-address{
+  display: none;
+  font-size: 35px;
+  background-color: #E0E0E0;
+  width: 400px;
+  margin: 20px auto;
+  padding: 13px;
+}
+
 
 .social-icons {
   opacity: .5;

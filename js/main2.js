@@ -158,6 +158,13 @@ $(function () {
     }
   }
 
+  function toggleEmail(){
+    $('#email-button').on('click', function(){
+      console.log('toggling email')
+      $('#email-address').slideToggle(400)
+    })
+  }
+
 
   function skillsButton(){
     $('#skills-button').on('click', toggleSkills)
@@ -166,14 +173,6 @@ $(function () {
   function resumeButton(){
     $('#resume-button').on('click', toggleResume)
   }
-
-
-  // function hideContact(){
-  //   $('#anchor2').on('click', function(){
-  //     console.log('hiding contacts')
-  //     $('#section-3').css({'top':'100vh', 'position':'relative'})
-  //   })
-  // }
 
   function navFadein(){
     $('nav').fadeToggle('slow','linear')
@@ -190,6 +189,7 @@ $(function () {
   skillsButton();
   resumeButton();
   toggleOffGitButtons();
+  toggleEmail();
   // hideContact();
 
 
