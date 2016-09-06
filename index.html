@@ -49,12 +49,34 @@
 
       </div>
       <div id="skills-container">
-        <ul>
-          <li>I love React</li>
-          <li>dinosaurs</li>
-          <li>ducks</li>
-          <li>food</li>
-        </ul>
+
+        <h2>Web Development:</h2>
+        <p>
+        Front-End:  React  /  Javascript  /  JQuery  /  D3  /  ChartJS  /  HTML5  /  CSS3  /  JSX  /  XML  /  ERB  </br>
+        Back-End:  Node  /  Express  /  Rails    </br>
+        Databases: MongoDB   /   PSQL  /  MyQL  </br>
+        Deployment:  AWS  /  Heroku  </br>
+        </p>
+
+        <h2>Datascience:</h2>
+        <p>
+        Python  /  PANDAS  /  Scikit Learn
+        </p>
+
+        <h2>Computer Vision & Astrophysics:</h2>
+        <p>
+        Python  /  SciPy  /  IRAF
+        </p>
+
+        <h2>3d Printing, CNC, CAM, 3d Modelling:</h2>
+        <p>
+        Solidworks  /  Rhino  /  AutoCAD  /  Autodesk  /  Sketchup  /  MasterCAM
+        </p>
+
+        <h2>Hardware:</h2>
+        <p>
+        Raspberry Pi  /  Arduino  /  Raspbian
+        </p>
       </div>
       <div id="resume-container">
        <img src="./images/resume.png" alt="" id="resume">
@@ -78,29 +100,41 @@
       <div id="projects-wrapper">
         <div id="project1-container">
           <div class="project-pic1" id="project1">
+            <a type="" class="github-button" id="proj1-github" href="https://github.com/trevp3/roBotany" target="_blank">
+              <div class="git-logo-bg">
+                <img src="./images/icons/white-github.png" alt="" class="white-github">
+              </div>
+              <span id="proj1-see">see this project on GitHub</span>
+            </a>
             <img src="./images/projects/robotanist.jpg" alt="" id="proj1-pic">
-            <div type="" class="github-button" id="proj1-github">
-              <img src="./images/icons/white-github.png" alt="" class="white-github">
-            </div>
           </div>
         </div>
         <div id="project234-container">
           <div id="project2" class="project-wrap">
-            <div type="" class="github-button2" id="proj2-github">
-              <img src="./images/icons/white-github.png" alt="" class="white-github">
-            </div>
+            <a type="" class="github-button" id="proj2-github" href="https://github.com/trevp3/Project_Democracy" target="_blank">
+              <div class="git-logo-bg">
+                <img src="./images/icons/white-github.png" alt="" class="white-github">
+              </div>
+              <span id="proj2-see">see this project on GitHub</span>
+            </a>
             <img src="./images/projects/gitocracy.png" alt="" class="proj-pic" id="proj2-pic">
           </div>
           <div id="project3" class="project-wrap">
-            <div type="" class="github-button2" id="proj3-github">
-              <img src="./images/icons/white-github.png" alt="" class="white-github">
-            </div>
+            <a type="" class="github-button" id="proj3-github" href="https://github.com/trevp3/climbr-lfg" target="_blank">
+              <div class="git-logo-bg">
+                <img src="./images/icons/white-github.png" alt="" class="white-github">
+              </div>
+              <span id="proj3-see">see this project on GitHub</span>
+            </a>
             <img src="./images/projects/climbr.png" alt="" class="proj-pic" id="proj3-pic">
           </div>
           <div id="project4" class="project-wrap">
-            <div type="" class="github-button2" id="proj3-github">
-              <img src="./images/icons/white-github.png" alt="" class="white-github">
-            </div>
+            <a type="" class="github-button" id="proj4-github" href="https://github.com/Share-Bear/ShareBear/" target="_blank">
+              <div class="git-logo-bg">
+                <img src="./images/icons/white-github.png" alt="" class="white-github">
+              </div>
+              <span id="proj4-see">see this project on GitHub</span>
+            </a>
             <img src="./images/projects/sharebear.png" alt="" class="proj-pic" id="proj4-pic">
           </div>
         </div>
@@ -108,21 +142,24 @@
     </div>
     <div id="proj1-desc" class="proj-desc">
       <h3>RoBotanist</h3>
+      <p class="proj-tech-desc">Node / Express / PSQL / Javascript / HTML / CSS / Raspbian / NOOBS</p>
       <p>RoBotanist is a plant watering robot.  It's composed of a Raspberry Pi that is set up as a NodeJS server which controls a watering pump.  Users can access the companion app through their browser to select what plant they want to water.  The app then uses its custom API to query a database of plants to retrieve data on how often that plant should be watered.  This data is then posted as an HTTP request to the Node server on the Pi which remotely configures RoBotanist's watering frequency.  There is also a "water now" button for those who prefer manual control.</p>
-      <p class="proj-tech-desc">Tech: NodeJs / ExpressJS / Javascript / HTML / CSS </p>
     </div>
 
     <div id="proj2-desc" class="proj-desc">
-      <p>RoBotanist is a plant watering robot.  It's composed of a Raspberry Pi that is set up as a NodeJS server which controls a watering pump.  Users can access the companion app through their browser to select what plant they want to water.  The app then uses its custom API to query a database of plants to retrieve data on how often that plant should be watered.  This data is then posted as an HTTP request to the Node server on the Pi which remotely configures RoBotanist's watering frequency.  There is also a "water now" button for those who prefer manual control.</p>
-      <p class="proj-tech-desc">Tech: NodeJs / ExpressJS / Javascript / HTML / CSS </p>
+      <h3>Gitocracy</h3>
+      <p class="proj-tech-desc">Rails / PSQL / GitHub API / Devise </p>
+      <p>Gitocracy is a platform that seeks to democratize project development.  Intended for open-source or community projects, Gitocracy allows developers to link their project's GitHub repo to the platform.  Gitocracy then uses GitHub's API to retrieve data from the repos "issues" and displays the information so that users can see what bugs and features are currently being worked on.  Users are then able to suggest features for the product and use an upvote/downvote system to nominate other users' suggestions.  Devs can then decide to add suggestions as issues.</p>
     </div>
     <div id="proj3-desc" class="proj-desc">
-      <p>RoBotanist is a plant watering robot.  It's composed of a Raspberry Pi that is set up as a NodeJS server which controls a watering pump.  Users can access the companion app through their browser to select what plant they want to water.  The app then uses its custom API to query a database of plants to retrieve data on how often that plant should be watered.  This data is then posted as an HTTP request to the Node server on the Pi which remotely configures RoBotanist's watering frequency.  There is also a "water now" button for those who prefer manual control.</p>
-      <p class="proj-tech-desc">Tech: NodeJs / ExpressJS / Javascript / HTML / CSS </p>
+      <h3>Climbr-LFG</h3>
+      <p class="proj-tech-desc">Node / Express / MongoDB / Javascript / HTML / CSS </p>
+      <p>Climbr is an app for rock climbers. It sets out to be the first graphically oriented database where climbers can access climbing routes and locations, all submitted by their peers.  </p>
     </div>
     <div id="proj4-desc" class="proj-desc">
-      <p>RoBotanist is a plant watering robot.  It's composed of a Raspberry Pi that is set up as a NodeJS server which controls a watering pump.  Users can access the companion app through their browser to select what plant they want to water.  The app then uses its custom API to query a database of plants to retrieve data on how often that plant should be watered.  This data is then posted as an HTTP request to the Node server on the Pi which remotely configures RoBotanist's watering frequency.  There is also a "water now" button for those who prefer manual control.</p>
-      <p class="proj-tech-desc">Tech: NodeJs / ExpressJS / Javascript / HTML / CSS </p>
+      <h3>ShareBear</h3>
+      <p class="proj-tech-desc">React / Node / Express / PSQL / Javascript / JSX / CSS </p>
+      <p>Share bear is a lending application made in React that offers users the ability to register and share items with their neighbors. Guests are able to search by zipcode and browse through a list of available items to borrow. Once a guest registers, they can list items or make arrangements to borrow items from others.</p>
     </div>
 
   </section>

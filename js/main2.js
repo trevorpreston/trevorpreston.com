@@ -12,12 +12,24 @@ $(function () {
       $proj1Desc.css({'display':'block', 'height':$pic1.height()});
       $pic1.css('opacity', '1');
       $('#proj1-github').css('display', 'block')
+
+      $('#proj2-github').css('display', 'none')
+      $('#proj3-github').css('display', 'none')
+      $('#proj4-github').css('display', 'none')
     })
 
     $pic1.on('mouseleave', function(){
       console.log('off')
       $proj1Desc.css('display', 'none');
       $pic1.css('opacity', '.6')
+    })
+
+    $('#proj1-github').on('mouseenter', function(){
+      $('#proj1-see').css('display', 'block')
+    })
+
+    $('#proj1-github').on('mouseleave', function(){
+      $('#proj1-see').css('display', 'none')
     })
   }
 
@@ -29,12 +41,25 @@ $(function () {
       console.log('huva!');
       $proj2Desc.css({'display':'block', 'height':$proj234Container.height()});
       $pic2.css('opacity', '1');
+      $('#proj2-github').css('display', 'block')
+
+      $('#proj1-github').css('display', 'none')
+      $('#proj3-github').css('display', 'none')
+      $('#proj4-github').css('display', 'none')
     })
 
     $pic2.on('mouseleave', function(){
       console.log('off')
       $proj2Desc.css('display', 'none');
       $pic2.css('opacity', '.6')
+    })
+
+    $('#proj2-github').on('mouseenter', function(){
+      $('#proj2-see').css('display', 'block')
+    })
+
+    $('#proj2-github').on('mouseleave', function(){
+      $('#proj2-see').css('display', 'none')
     })
   }
 
@@ -47,12 +72,25 @@ $(function () {
       console.log('huva!');
       $proj3Desc.css({'display':'block', 'height':$proj234Container.height()});
       $pic3.css('opacity', '1');
+      $('#proj3-github').css('display', 'block')
+
+      $('#proj1-github').css('display', 'none')
+      $('#proj2-github').css('display', 'none')
+      $('#proj4-github').css('display', 'none')
     })
 
     $pic3.on('mouseleave', function(){
       console.log('off')
       $proj3Desc.css('display', 'none');
       $pic3.css('opacity', '.6')
+    })
+
+    $('#proj3-github').on('mouseenter', function(){
+      $('#proj3-see').css('display', 'block')
+    })
+
+    $('#proj3-github').on('mouseleave', function(){
+      $('#proj3-see').css('display', 'none')
     })
   }
 
@@ -65,12 +103,25 @@ $(function () {
       console.log('huva!');
       $proj4Desc.css({'display':'block', 'height':$proj234Container.height()});
       $pic4.css('opacity', '1');
+      $('#proj4-github').css('display', 'block')
+
+      $('#proj1-github').css('display', 'none')
+      $('#proj2-github').css('display', 'none')
+      $('#proj3-github').css('display', 'none')
     })
 
     $pic4.on('mouseleave', function(){
       console.log('off')
       $proj4Desc.css('display', 'none');
       $pic4.css('opacity', '.6')
+    })
+
+    $('#proj4-github').on('mouseenter', function(){
+      $('#proj4-see').css('display', 'block')
+    })
+
+    $('#proj4-github').on('mouseleave', function(){
+      $('#proj4-see').css('display', 'none')
     })
   }
 
