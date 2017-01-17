@@ -235,6 +235,10 @@ h1 {
   margin-top: 5px
 }*/
 
+.projects img{
+/*display: inline-block;*/
+  width: 100%;
+}
 
 
 
@@ -297,9 +301,27 @@ h1 {
 
 
 
+.projects{
+  background-color: #303030;
+  position: relative;
+  float: left;
+  height: 120vh;
+  width: 100%;
+  box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);
+}
 
+#project-nav {
+  display: flex;
+  justify-content: space-around;
+}
 
-
+#project-nav div{
+  width: 300px;
+  height: 80px;
+  background-color: yellow;
+  border-width: 5px;
+  border-color: green;
+}
 
 
 .github-button{
@@ -349,6 +371,38 @@ h1 {
 .git-logo-bg:hover{
   background: linear-gradient(220deg, #DDFF00, #7BFF57);
   cursor: pointer;
+}
+
+
+#proj1-github{
+  display: none;
+  top: 2%;
+  left: 7%
+}
+
+#proj1-see{
+  display: none;
+}
+#proj2-see{
+  display: none;
+}
+#proj3-see{
+  display: none;
+}
+#proj4-see{
+  display: none;
+}
+
+#proj2-github{
+  display: none;
+}
+
+#proj3-github{
+  display: none;
+}
+
+#proj4-github{
+  display: none;
 }
 
 
