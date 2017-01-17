@@ -318,15 +318,15 @@ anchor_nav.addEventListener('click', function(e) {
 
   new ScrollMagic.Scene({triggerElement: ".about"})
         .setClassToggle("#nav-tog-el-1", "active-nav") // add class toggle
-        // .addIndicators() // add indicators (requires plugin)
+        // .addIndicators() 
         .addTo(controller2);
   new ScrollMagic.Scene({triggerElement: ".projects"})
         .setClassToggle("#nav-tog-el-2", "active-nav") // add class toggle
-        // .addIndicators() // add indicators (requires plugin)
+        // .addIndicators() 
         .addTo(controller2);
   new ScrollMagic.Scene({triggerElement: ".contact"})
         .setClassToggle("#nav-tog-el-4", "active-nav") // add class toggle
-        // .addIndicators() // add indicators (requires plugin)
+        // .addIndicators() 
         .addTo(controller2);
 
 
