@@ -235,10 +235,6 @@ h1 {
   margin-top: 5px
 }*/
 
-.projects img{
-/*display: inline-block;*/
-  width: 100%;
-}
 
 
 
@@ -305,28 +301,6 @@ h1 {
 
 
 
-.projects{
-  background-color: #303030;
-  position: relative;
-  float: left;
-  height: 120vh;
-  width: 100%;
-  box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);
-}
-
-.proj-desc{
-  color:#E0E0E0;
-}
-
-.proj-desc h3{
-  font-size: 44px;
-  margin: 20px 0px 10px;
-  text-align: center
-}
-
-.proj-desc p {
-  padding: 25px;
-}
 
 .github-button{
   position: absolute;
@@ -378,38 +352,6 @@ h1 {
 }
 
 
-#proj1-github{
-  display: none;
-  top: 2%;
-  left: 7%
-}
-
-#proj1-see{
-  display: none;
-}
-#proj2-see{
-  display: none;
-}
-#proj3-see{
-  display: none;
-}
-#proj4-see{
-  display: none;
-}
-
-#proj2-github{
-  display: none;
-}
-
-#proj3-github{
-  display: none;
-}
-
-#proj4-github{
-  display: none;
-}
-
-
 
 .white-github{
 
@@ -422,187 +364,7 @@ h1 {
   margin: 20px auto;
 }
 
-.projects-container{
-  background-color: #424242;
-  box-shadow: 0 2px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  padding: 25px 0px;
-  width: 1000px;
-  height: 67%;
-  margin: 10px auto;
-  overflow-y: scroll;
-  overflow-x: visible;
-}
 
-
-#projects-wrapper{
-  height: 100%;
-  width: 100%;
-  margin: auto;
-  text-align: center;
-/*  background-color: blue
-*/}
-
-#project1-container{
-  position: relative;
-  vertical-align:top;
-  display: inline-block;
-/*  background-color: yellow;
-*/  text-align: center;
-  width: 440px;
-  top: 0px;
-  left: 0px;
-  overflow: visible;
-}
-
-#proj1-pic{
-  width: 94%;
-  opacity: .6;
-}
-
-
-
-#project234-container{
-  position: relative;
-  display: inline-block;
-  width: 460px;
-  height: 100%;
-}
-
-
-.project-wrap{
-  height: 33%;
-  position: relative;
-  margin: auto;
-  margin-bottom: 2.15%
-}
-
-
-
-.proj-pic{
-  object-fit: cover;
-  opacity: .6;
-  height: 100%;
-  margin: auto;
-  margin-bottom: 2%
-}
-
-#proj1-desc{
-  display: none;
-  position: absolute;
-  left: 60px;
-  top: 153px;
-  background-color: #212121;
-  width: 19%;
-  min-width: 250px;
-  height: 65%;
-}
-
-#proj1-desc:after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 100%;
-  top: 45%;
-  margin-top: -10px;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 25px solid #212121;
-}
-
-#proj1-hitbox{
-  position: absolute;
-  background-color: transparent;
-  top: 0px;
-  left: 0px;
-  opacity: .6;
-  height: 100%;
-  width: 250%;
-  min-width: 800px;
-  margin: auto;
-  margin-bottom: 2%;
-  z-index: 10
-}
-
-#proj2-desc{
-  display: none;
-  position: absolute;
-  right: 50px;
-  top: 153px;
-  background-color: #212121;
-  width: 19%;
-  min-width: 250px;
-  height: 65%;
-}
-
-#proj2-desc:after {
-  content: '';
-  display: block;
-  position: absolute;
-  right: 100%;
-  top: 16%;
-  margin-top: -10px;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-right: 25px solid #212121;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid transparent;
-}
-
-#proj3-desc{
-  display: none;
-  position: absolute;
-  right: 50px;
-  top: 153px;
-  background-color: #212121;
-  width: 19%;
-  min-width: 250px;
-  height: 65%;
-}
-
-#proj3-desc:after {
-  content: '';
-  display: block;
-  position: absolute;
-  right: 100%;
-  top: 48%;
-  margin-top: -10px;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-right: 25px solid #212121;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid transparent;
-}
-
-#proj4-desc{
-  display: none;
-  position: absolute;
-  right: 50px;
-  top: 153px;
-  background-color: #212121;
-  width: 19%;
-  min-width: 250px;
-  height: 65%;
-}
-
-#proj4-desc:after {
-  content: '';
-  display: block;
-  position: absolute;
-  right: 100%;
-  top: 84%;
-  margin-top: -10px;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-right: 25px solid #212121;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid transparent;
-}
 
 
 .contact{
